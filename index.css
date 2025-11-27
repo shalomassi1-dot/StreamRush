@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    padding-top: 70px;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+header{
+    height: 50vw;
+    overflow: hidden;
+   width: 100%; 
+   background-color: black;
+}
+
+.navbar{
+    position:fixed;
+    top: 0;
+    padding: 0 25px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 98%;
+    box-sizing: border-box;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+.navbar a{ 
+    color: #111;
+}
+
+.navbar.logo{
+    padding-left: 20px;
+    z-index: 50px;
+    font-size: 2cm;
+    font-weight: bold;
+} 
+
+h2{
+    color: #e1b60c;
+}
+
+.nav-links{
+    margin: none;
+}
+
+
+.navbar .nav-links ul{
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links ul li :hover{
+    text-decoration: underline;
+   color: #ffcc00;
+        
+}
+
+
+.video-header {
+    width: 110%;
+    height: 110%;
+    position: relative ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.video{
+    position: relative;
+    z-index: 1;
+}
+
+.footer{
+    background: #e1b60c;
+    color: black;
+    padding: 40px 20px 20px;
+    margin-top: 50px;
+    font-family: 'poppins', sans-serif;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.footer-section h3{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
+
+.footer-section p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.footer-section ul{
+    color: #bbb;
+    padding: 0;
+}
+
+.footer-section ul li{
+    color: black;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.footer-section a {
+   color: #bbb;
+   transition: 0.3s;
+}
+
+.footer-section a:hover{
+    color: black;
+}
+
+.socials a{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.footer-bottom{
+   text-align: center;
+   padding-top: 15px;
+   border-top: 1px solid #333;
+   color: #777;
+   font-size: 14px;
+}
+
+.footer-section a {
+    color: white;
+    align-items: center;
+    text-align: center
+}
+
+.mid-section{
+display: flex;
+gap: 20px;
+overflow-x: auto;
+padding: 20px;
+scroll-behavior: smooth;
+scrollbar-width: none;
+}
+
+.mid-section::-webkit-scrollbar{
+    display: none
+}
+
+.card{
+    position: relative;
+    width: 180px;
+    height: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover{
+      box-shadow: 0 8px 20px #ffcc00;
+      transform: scale(1.2) translateY(-10px);
+}
+
+.card:hover img{
+      transform: scale(1.2) translateY(-10px);
+}
+
+
+.card h3{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.bar{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    backdrop-filter: blur(4px);
+}
+
+.h1{
+    color: #ffffff;
+}
+
+.info{
+    width: 500px;
+    background: black;
+    border: 3px solid #ffcc00;
+    border-left: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.news{
+    color: #ffcc00;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.text{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.connecter{
+    margin-left: 20px;
+    height:25px ;
+    background: #e6b800;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.connecter:hover{
+    background: #e1b60c;
+    border-color: #e1b60c;
+    box-shadow: #ffcc00;
+}
+
+.search-section input{
+    margin-left: auto;
+    width: 250px;
+    height: 35px;
+    background: transparent;
+    border-radius: 15px;
+    border: 0.5px solid #ffcc00;
+
+}

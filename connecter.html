@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamRush</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image:url(fb_4.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+.bloc-connexion {
+    backdrop-filter: blur(3px);
+    width: 350px;
+    background: transparent;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2 {
+    color: #e1b60c;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+
+.formulaire-connexion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    color: #ffcc00;
+    text-align: left;
+    font-weight: 500;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #e1b60c;
+}
+
+
+.bouton {
+    width: 250px;
+    background: white;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.bouton:hover {
+    background: #ffcc00;
+}
+.texte-inscription {
+     margin-bottom: 25px;
+    color: white;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.texte-inscription a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+.texte-inscription a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter</title>
+    <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+
+    <div class="bloc-connexion">
+        <h2>Se connecter</h2>
+        <p class="texte-inscription">Entrez vos identifiants pour continuer</p>
+
+        <form class="formulaire-connexion" action="index.html">
+            <label>Email</label>
+            <input type="email" placeholder="exemple@mail.com" required>
+
+            <label>Mot de passe</label>
+            <input type="password" placeholder="Votre mot de passe" required>
+              <button type="submit" class="bouton">Connexion</button>
+            
+            <p class="texte-inscription">
+                Pas encore de compte ?
+                <a href="#">Créer un compte</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
+
+</body>
+</html>

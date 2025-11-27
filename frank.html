@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>StreamRush</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body{
+    background: #000;
+    color: #fff;
+    font-family: "Poppins", Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+  }
+
+ 
+  .card-frame{
+    position: relative;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+
+  .card {
+    display: flex;
+    gap: 20px;
+    background: #0f0f0f;
+    padding: 20px;
+    border-radius: 12px;
+    align-items: flex-start;
+    width: 100%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  }
+
+
+  .card .poster {
+    flex: 0 0 240px; 
+    height: 360px;   
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .card .poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+  }
+
+  
+  .card .content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card h3{
+    font-size: 1.35rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+  }
+
+  .card .meta{
+    color: #cfcfcf;
+    font-size: 0.95rem;
+  }
+
+  .card p.summary{
+    color: #ddd;
+    line-height: 1.4;
+    font-size: 0.95rem;
+  }
+
+  
+  .card .actions{
+    margin-top: auto; 
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .btn{
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  .btn.primary{
+    background: transparent; 
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+  }
+
+  .btn.primary:hover{
+      background: #ffcc00;
+      color: #000;
+  }
+
+  .btn.secondary{
+    background: transparent;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+  }
+
+  .btn.secondary:hover{
+       background: #ffcc00;
+       color: #000;
+  }
+    .card .poster { width: 70%; height: 300px; }
+    .card .content{ width: 100%; text-align: center; }
+  
+
+</style>
+</head>
+<body>
+
+    <article class="card">
+      <div class="poster">
+        
+        <img src="frank.jpeg" alt="Affiche du film">
+      </div>
+
+      <div class="content">
+        <h3 style="color: #ffcc00;">FRANKEINSTEIN</h3>
+        <br>
+        <div class="meta" style="margin-right: auto;">Film, Science-Fiction</div>
+        <p class="summary">
+          Le film FRANKEINSTEIN raconte l'histoire d'un scientifique obsédé qui, en quête de dépasser les limites de la nature, crée une créature à partir de morceaux de cadavres. <br> Rejetée et incomprise par la société et par son propre créateur, la créature cherche à comprendre son existence et finit par se tourner vers la vengeance, entraînant auteur et création dans une spirale tragique.
+        </p>
+
+        <div class="actions">
+          <button class="btn primary" style="margin-left: auto;">Regarder</button>
+          <button onclick="window.open('https://youtu.be/rWiI9LPTAJU','_blank')" class="btn secondary">Bande d'annonce</button>
+        </div>
+      </div>
+    </article>
+  
+</body>
+</html>

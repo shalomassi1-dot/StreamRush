@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamRush</title>
+    <style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+.titre-page {
+    text-align: center;
+    padding: 30px 0;
+    background: #FFCC00;
+    margin: 0;
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.abonnements-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.carte-abonnement {
+    background: #fff;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    transition: .3s ease;
+}
+
+.carte-abonnement:hover {
+    transform: translateY(-10px);
+}
+
+.carte-abonnement h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.prix {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFCC00;
+    margin: 10px 0 20px;
+}
+
+.carte-abonnement ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.carte-abonnement ul li {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.btn-choisir {
+    background: #FFCC00;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: .2s;
+}
+
+.btn-choisir:hover {
+    background: #e6b800;
+}
+
+.carte-populaire {
+    border: 3px solid #FFCC00;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background: #FFCC00;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Abonnement</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="titre-page">Choisissez votre abonnement</h1>
+    </header>
+
+    <section class="abonnements-container">
+
+        <div class="carte-abonnement">
+            <h2>Hebdomadaire</h2>
+            <p class="prix">7 000 FCFA</p>
+            <ul>
+                <li>Accès complet</li>
+                <li>Support basique</li>
+                <li>Mise à jour mensuelle</li>
+            </ul>
+            <a href="confirme.html">
+            <button class="btn-choisir">Choisir</button>
+            </a>
+        </div>
+
+        <div class="carte-abonnement carte-populaire">
+            <div class="badge">Populaire</div>
+            <h2>Mensuel</h2>
+            <p class="prix">12 000 FCFA</p>
+            <ul>
+                <li>Accès complet</li>
+                <li>Support prioritaire</li>
+                <li>Mises à jour illimitées</li>
+            </ul>
+            <a href="confirme.html">
+            <button class="btn-choisir">Choisir</button>
+            </a>
+        </div>
+
+        <div class="carte-abonnement">
+            <h2>Annuel</h2>
+            <p class="prix">50 000 FCFA</p>
+            <ul>
+                <li>Accès à vie</li>
+                <li>Support premium</li>
+                <li>Accès aux nouvelles fonctionnalités</li>
+            </ul>
+            <a href="confirme.html">
+            <button class="btn-choisir">Choisir</button>
+            </a>
+        </div>
+
+    </section>
+
+</body>
+</html>

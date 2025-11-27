@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamRush</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<section class="mid-section">
+    <h2>SERIES</h2>
+    <div class="film">
+        <div class="img">
+            <img src="running.jpg" alt="">
+             <div class="bar">THE RUNNING MAN</div>
+        </div>
+        <br>
+        <p>
+            Genre: Action, Aventure. 2025 <br>
+            Réalisatuer: EDGAR WRIGTH
+        </p>
+        <br>
+        <div class="boutton">
+            <a href="btn r">Regarder le film</a>
+            </div>
+            <br>
+            <div class="boutton">
+            <a href="btn b">Bande d'annonce</a>
+             </div>
+    </div>
+</section>
+    
+
+
+
+    <style>
+
+        .body{
+            margin: 20px;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .film{
+            margin: 20px;
+            width: 220px;
+            background: #111;
+            border-radius: 12px;
+            overflow: hidden;
+            color: white;
+            font-family: 'poppins', sans-serif;
+            box-shadow: 0 4px 12px #ffcc00;
+            padding-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .film:hover{
+            transform: scale(1.05)
+        }
+
+        .img{
+           position: relative;
+           width: 100%;
+           height: 70%;
+           border-radius: 10px;
+           overflow: hidden;
+           flex-shrink: 0;
+
+        }
+
+        .img img{
+            object-fit: cover;
+            border: cover;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .h2{
+            font-size: 18px;
+            margin: 12px;
+            text-align: center;
+            color: #ffcc00;
+        }
+
+        .p{
+            font-size: 14px;
+            margin: 0 12px 15px 12px;
+            line-height: 1.4;
+            color: #ddd;
+        }
+
+        .boutton{
+            background: #ffcc00;
+            border: 3px solid #ffcc00;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0 15px; 
+            backdrop-filter: blur(5px);
+        }
+
+        .boutton a{
+            text-align: center;
+            color: white;
+        }
+
+        .btn{
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn.r{
+           background: transparent;
+           color: #111;
+        }
+
+        .btn.r:hover{
+            background: #ffcc00;
+        }
+
+        .btn.b{
+            background: transparent;
+            color: #ffcc00;
+            border: 2px solid #ffcc00 ;
+        }
+
+        .btn.b:hover{
+            background: #ffcc00;
+            color: black ;
+        }
+
+        .mid-section{
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+        }
+
+        .mid-section ::-webkit-scrollbar{
+            display: none ;
+        }
+
+        .bar{
+           position: absolute;
+           top: 10px;
+           left: 10px;
+           right: 10px;
+           background: rgba(0,0,0,0.55);
+           color: white;
+           padding: 8px 12px;
+           border-radius: 12px;
+           font-size: 15px;
+           font-weight: 700;
+           backdrop-filter:  blur(4px);
+        }
+    </style>
+</body>
+</html>
