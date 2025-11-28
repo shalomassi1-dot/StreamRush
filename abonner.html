@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StreamRush</title>
     <style>
-    body {
+.body {
     margin: 0;
+    background-image: url("fb_4.jpg");
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("fb_4.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+ 
+}
+
 
 .titre-page {
     text-align: center;
@@ -30,7 +48,7 @@
 }
 
 .carte-abonnement {
-    background: #fff;
+    background: #111;
     width: 280px;
     padding: 25px;
     border-radius: 15px;
@@ -97,8 +115,7 @@
     border-radius: 6px;
     font-weight: bold;
 }
-
-    </style>
+   </style>
 </head>
 <body>
     <!DOCTYPE html>
@@ -117,9 +134,9 @@
     <section class="abonnements-container">
 
         <div class="carte-abonnement">
-            <h2>Hebdomadaire</h2>
-            <p class="prix">7 000 FCFA</p>
-            <ul>
+            <h2 style="color: #e6b800;">Hebdomadaire</h2>
+            <p class="prix">3 000 FCFA</p>
+            <ul style="color: white;">
                 <li>Accès complet</li>
                 <li>Support basique</li>
                 <li>Mise à jour mensuelle</li>
@@ -131,9 +148,9 @@
 
         <div class="carte-abonnement carte-populaire">
             <div class="badge">Populaire</div>
-            <h2>Mensuel</h2>
-            <p class="prix">12 000 FCFA</p>
-            <ul>
+            <h2 style="color: #e6b800;">Mensuel</h2>
+            <p class="prix">7 000 FCFA</p>
+            <ul style="color: white;">
                 <li>Accès complet</li>
                 <li>Support prioritaire</li>
                 <li>Mises à jour illimitées</li>
@@ -144,9 +161,9 @@
         </div>
 
         <div class="carte-abonnement">
-            <h2>Annuel</h2>
-            <p class="prix">50 000 FCFA</p>
-            <ul>
+            <h2 style="color: #e6b800;">Annuel</h2>
+            <p class="prix">12 000 FCFA</p>
+            <ul style="color: white;">
                 <li>Accès à vie</li>
                 <li>Support premium</li>
                 <li>Accès aux nouvelles fonctionnalités</li>
